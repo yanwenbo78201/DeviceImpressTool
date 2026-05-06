@@ -1,0 +1,16 @@
+PODS:
+  - DeviceImpressTool (0.1.0)
+
+DEPENDENCIES:
+  - DeviceImpressTool (from `../`)
+
+EXTERNAL SOURCES:
+  DeviceImpressTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeviceImpressTool: 2ba443cbfc21b506d89de7bbb0b5932c4931d65f
+
+PODFILE CHECKSUM: ecbe80bcb1a4596763fe0cf8b33151a6ec726400
+
+COCOAPODS: 1.16.2
