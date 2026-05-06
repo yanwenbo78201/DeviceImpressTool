@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DeviceImpressTool_Example' do
+  pod 'DeviceImpressTool', :path => '../'
+
+  target 'DeviceImpressTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
