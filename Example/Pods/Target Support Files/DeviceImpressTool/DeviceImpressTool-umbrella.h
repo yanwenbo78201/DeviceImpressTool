@@ -12,7 +12,6 @@
 
 #import "BrokenService.h"
 #import "DeviceService.h"
-#import "ObjcImgPressAnTool.h"
 #import "NetworkService.h"
 #import "StorageService.h"
 #import "SystemService.h"

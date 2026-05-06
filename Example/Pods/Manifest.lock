@@ -1,5 +1,17 @@
 PODS:
-  - DeviceImpressTool (0.1.0)
+  - DeviceImpressTool (0.1.0):
+    - DeviceImpressTool/System (= 0.1.0)
+  - DeviceImpressTool/Broken (0.1.0)
+  - DeviceImpressTool/Device (0.1.0)
+  - DeviceImpressTool/Network (0.1.0)
+  - DeviceImpressTool/Storage (0.1.0)
+  - DeviceImpressTool/System (0.1.0):
+    - DeviceImpressTool/Broken
+    - DeviceImpressTool/Device
+    - DeviceImpressTool/Network
+    - DeviceImpressTool/Storage
+    - DeviceImpressTool/Time
+  - DeviceImpressTool/Time (0.1.0)
 
 DEPENDENCIES:
   - DeviceImpressTool (from `../`)
@@ -9,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceImpressTool: 2ba443cbfc21b506d89de7bbb0b5932c4931d65f
+  DeviceImpressTool: ad1b4ac0215051edae9ca23b37b5a28171c3eafa
 
 PODFILE CHECKSUM: ecbe80bcb1a4596763fe0cf8b33151a6ec726400
 

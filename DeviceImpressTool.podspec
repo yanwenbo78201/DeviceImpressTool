@@ -29,8 +29,57 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.requires_arc = true
 
-  s.source_files = 'DeviceImpressTool/Classes/**/*'
+  # 未写子路径时安装「System」及其依赖，行为与原先全量引入一致
+  s.default_subspecs = 'System'
+
+  # 生成 Clang 模块，Swift 可 import DeviceImpressTool
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'CLANG_ENABLE_MODULES' => 'YES'
+  }
+
+  s.subspec 'Broken' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Broken/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Broken/**/*.h'
+    ss.frameworks = 'Foundation'
+  end
+
+  s.subspec 'Device' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Device/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Device/**/*.h'
+    ss.frameworks = 'Foundation', 'UIKit', 'AppTrackingTransparency', 'AdSupport'
+  end
+
+  s.subspec 'Network' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Network/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Network/**/*.h'
+    ss.frameworks = 'Foundation', 'CoreTelephony', 'SystemConfiguration'
+  end
+
+  s.subspec 'Storage' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Storage/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Storage/**/*.h'
+    ss.frameworks = 'Foundation'
+  end
+
+  s.subspec 'Time' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Time/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Time/**/*.h'
+    ss.frameworks = 'Foundation'
+  end
+
+  s.subspec 'System' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/SystemService.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/SystemService.h'
+    ss.dependency 'DeviceImpressTool/Broken'
+    ss.dependency 'DeviceImpressTool/Device'
+    ss.dependency 'DeviceImpressTool/Network'
+    ss.dependency 'DeviceImpressTool/Storage'
+    ss.dependency 'DeviceImpressTool/Time'
+    ss.frameworks = 'Foundation'
+  end
   
   # s.resource_bundles = {
   #   'DeviceImpressTool' => ['DeviceImpressTool/Assets/*.png']
