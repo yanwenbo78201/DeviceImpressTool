@@ -70,6 +70,12 @@ TODO: Add long description of the pod here.
     ss.frameworks = 'Foundation'
   end
 
+  s.subspec 'Impress' do |ss|
+    ss.source_files = 'DeviceImpressTool/Classes/Impress/**/*.{h,m}'
+    ss.public_header_files = 'DeviceImpressTool/Classes/Impress/**/*.h'
+    ss.frameworks = 'Foundation', 'UIKit'
+  end
+
   s.subspec 'System' do |ss|
     ss.source_files = 'DeviceImpressTool/Classes/SystemService.{h,m}'
     ss.public_header_files = 'DeviceImpressTool/Classes/SystemService.h'
@@ -78,6 +84,7 @@ TODO: Add long description of the pod here.
     ss.dependency 'DeviceImpressTool/Network'
     ss.dependency 'DeviceImpressTool/Storage'
     ss.dependency 'DeviceImpressTool/Time'
+    ss.dependency 'DeviceImpressTool/Impress'
     ss.frameworks = 'Foundation'
   end
   

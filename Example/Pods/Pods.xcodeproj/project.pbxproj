@@ -60,7 +60,7 @@
 		0ECAB44723653FA415E1CD2B182BB536 /* Pods-DeviceImpressTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeviceImpressTool_Example.modulemap"; sourceTree = "<group>"; };
 		0F0D0D999F6EBF894A44283642C9FB0F /* Pods-DeviceImpressTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeviceImpressTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1015C73E7D3F698DF37CCFC130D9996B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		14378E4AA9D19085D941D19432563CD4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		14378E4AA9D19085D941D19432563CD4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		172FBB98A6BFE6174289D31FC746D24B /* Pods-DeviceImpressTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceImpressTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		173804DF14D26E84AD1CBBB014651378 /* NetworkService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NetworkService.m; path = DeviceImpressTool/Classes/Network/NetworkService.m; sourceTree = "<group>"; };
 		1B9BFF0F8918E841004F0F2770DA3F32 /* DeviceImpressTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeviceImpressTool-Info.plist"; sourceTree = "<group>"; };
@@ -69,27 +69,27 @@
 		27C4B5050B42CB32E88BD76D6E235DE3 /* BrokenService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BrokenService.m; path = DeviceImpressTool/Classes/Broken/BrokenService.m; sourceTree = "<group>"; };
 		2CAD9D286CFB163F93FA2981ABE5E75F /* StorageService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StorageService.h; path = DeviceImpressTool/Classes/Storage/StorageService.h; sourceTree = "<group>"; };
 		318488091608D7B8F48E169C26038B44 /* Pods-DeviceImpressTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeviceImpressTool_Tests.modulemap"; sourceTree = "<group>"; };
-		334A3A49C2C739B1FF0CDBC9AC141F06 /* DeviceImpressTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DeviceImpressTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		334A3A49C2C739B1FF0CDBC9AC141F06 /* DeviceImpressTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DeviceImpressTool.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		40070CDC6428CDB99DBCE0273E3E2DAC /* Pods-DeviceImpressTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceImpressTool_Tests-Info.plist"; sourceTree = "<group>"; };
 		45E4636AEA4188471CD39DD2EF1BAACC /* Pods-DeviceImpressTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeviceImpressTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A6446EE80C84A96E6EC2FF5191592E7 /* DeviceImpressTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceImpressTool-umbrella.h"; sourceTree = "<group>"; };
 		4F65EBF1CC762DB8C01FA4D5B344F1CA /* Pods-DeviceImpressTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceImpressTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		503E8E7B930AD4B0A9B71E3B4A9EBD77 /* TimeService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TimeService.h; path = DeviceImpressTool/Classes/Time/TimeService.h; sourceTree = "<group>"; };
 		51EFE90FE76330C0E3767CE4EA1A908D /* DeviceImpressTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceImpressTool.release.xcconfig; sourceTree = "<group>"; };
-		56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeviceImpressTool; path = DeviceImpressTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceImpressTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1D7EC93A2DF6FF2CA3CCD8053FD8DB /* DeviceService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeviceService.m; path = DeviceImpressTool/Classes/Device/DeviceService.m; sourceTree = "<group>"; };
-		6B00DD82016B3F3FABB1DA48446A9B6E /* Pods-DeviceImpressTool_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeviceImpressTool_Tests"; path = Pods_DeviceImpressTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B00DD82016B3F3FABB1DA48446A9B6E /* Pods_DeviceImpressTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceImpressTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9CED069EF09A274A8C529E7075FABB /* Pods-DeviceImpressTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeviceImpressTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6E0B47712434E2AA0C8845123BBAEB26 /* NetworkService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NetworkService.h; path = DeviceImpressTool/Classes/Network/NetworkService.h; sourceTree = "<group>"; };
 		7C9F789AE322E7B1F3ECB7C7A052707D /* Pods-DeviceImpressTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeviceImpressTool_Tests-umbrella.h"; sourceTree = "<group>"; };
-		875F981AB13BAF122246BEF762B2ECF6 /* Pods-DeviceImpressTool_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeviceImpressTool_Example"; path = Pods_DeviceImpressTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875F981AB13BAF122246BEF762B2ECF6 /* Pods_DeviceImpressTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceImpressTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0A352519CC757CDCAF4195B3E8876E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A942FF740B1526F0791DFB1A65557459 /* SystemService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SystemService.m; path = DeviceImpressTool/Classes/SystemService.m; sourceTree = "<group>"; };
 		AAC30CD877673F1FA9D9AC9DAFCEF0A9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		AE1F2A8B240D09FD6154473A1674606F /* DeviceImpressTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeviceImpressTool.modulemap; sourceTree = "<group>"; };
 		B02D513332A9DA9FF9A2CB91D00C3E4A /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = DEVELOPER_DIR; };
-		B4938B6FBF11A77E76BD69B518728880 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B4938B6FBF11A77E76BD69B518728880 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B53CC96B10B0C8797A09543BD1485CC4 /* DeviceImpressTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceImpressTool-dummy.m"; sourceTree = "<group>"; };
 		D9A2D84EDC061ABB07AC5701A021B65C /* Pods-DeviceImpressTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceImpressTool_Example-Info.plist"; sourceTree = "<group>"; };
 		DEF62ECC1B69A969653F562612F4AE8C /* Pods-DeviceImpressTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeviceImpressTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,9 +149,9 @@
 		27DADD5806DB2F87575D6D718D9615A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool */,
-				875F981AB13BAF122246BEF762B2ECF6 /* Pods-DeviceImpressTool_Example */,
-				6B00DD82016B3F3FABB1DA48446A9B6E /* Pods-DeviceImpressTool_Tests */,
+				56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool.framework */,
+				875F981AB13BAF122246BEF762B2ECF6 /* Pods_DeviceImpressTool_Example.framework */,
+				6B00DD82016B3F3FABB1DA48446A9B6E /* Pods_DeviceImpressTool_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 			);
 			name = "Pods-DeviceImpressTool_Tests";
 			productName = Pods_DeviceImpressTool_Tests;
-			productReference = 6B00DD82016B3F3FABB1DA48446A9B6E /* Pods-DeviceImpressTool_Tests */;
+			productReference = 6B00DD82016B3F3FABB1DA48446A9B6E /* Pods_DeviceImpressTool_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		42722D5454A9E5032866D364F8D389F4 /* DeviceImpressTool */ = {
@@ -394,7 +394,7 @@
 			);
 			name = DeviceImpressTool;
 			productName = DeviceImpressTool;
-			productReference = 56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool */;
+			productReference = 56F95C0B283D8B042968C592110E4017 /* DeviceImpressTool.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ECA546E6018954F1ED19A764B5BBCAF7 /* Pods-DeviceImpressTool_Example */ = {
@@ -413,7 +413,7 @@
 			);
 			name = "Pods-DeviceImpressTool_Example";
 			productName = Pods_DeviceImpressTool_Example;
-			productReference = 875F981AB13BAF122246BEF762B2ECF6 /* Pods-DeviceImpressTool_Example */;
+			productReference = 875F981AB13BAF122246BEF762B2ECF6 /* Pods_DeviceImpressTool_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -434,8 +434,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 27DADD5806DB2F87575D6D718D9615A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -717,8 +715,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
