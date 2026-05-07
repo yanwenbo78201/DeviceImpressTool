@@ -3,11 +3,13 @@ PODS:
     - DeviceImpressTool/System (= 0.1.0)
   - DeviceImpressTool/Broken (0.1.0)
   - DeviceImpressTool/Device (0.1.0)
+  - DeviceImpressTool/Impress (0.1.0)
   - DeviceImpressTool/Network (0.1.0)
   - DeviceImpressTool/Storage (0.1.0)
   - DeviceImpressTool/System (0.1.0):
     - DeviceImpressTool/Broken
     - DeviceImpressTool/Device
+    - DeviceImpressTool/Impress
     - DeviceImpressTool/Network
     - DeviceImpressTool/Storage
     - DeviceImpressTool/Time
@@ -21,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceImpressTool: ad1b4ac0215051edae9ca23b37b5a28171c3eafa
+  DeviceImpressTool: 373b6e1dae6b15811837b9ca4986867c9393ae01
 
 PODFILE CHECKSUM: ecbe80bcb1a4596763fe0cf8b33151a6ec726400
 

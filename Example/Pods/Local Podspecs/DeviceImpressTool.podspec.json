@@ -65,6 +65,15 @@
       "frameworks": "Foundation"
     },
     {
+      "name": "Impress",
+      "source_files": "DeviceImpressTool/Classes/Impress/**/*.{h,m}",
+      "public_header_files": "DeviceImpressTool/Classes/Impress/**/*.h",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ]
+    },
+    {
       "name": "System",
       "source_files": "DeviceImpressTool/Classes/SystemService.{h,m}",
       "public_header_files": "DeviceImpressTool/Classes/SystemService.h",
@@ -73,7 +82,8 @@
         "DeviceImpressTool/Device": [],
         "DeviceImpressTool/Network": [],
         "DeviceImpressTool/Storage": [],
-        "DeviceImpressTool/Time": []
+        "DeviceImpressTool/Time": [],
+        "DeviceImpressTool/Impress": []
       },
       "frameworks": "Foundation"
     }
