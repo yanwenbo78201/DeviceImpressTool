@@ -9,6 +9,7 @@
 #import "FYViewController.h"
 #import <DeviceImpressTool/SystemService.h>
 #import <DeviceImpressTool/ImpressService.h>
+#import <DeviceImpressTool_Example-Swift.h>
 
 @interface FYViewController ()
 
@@ -30,6 +31,13 @@
             // 压缩失败
         }
     }];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self.navigationController pushViewController:[SwiftViewController new] animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9A7B6C362FAC772900FC1EF5 /* big.JPEG in Resources */ = {isa = PBXBuildFile; fileRef = 9A7B6C352FAC772900FC1EF5 /* big.JPEG */; };
+		9A7B6C392FAC7A3100FC1EF5 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B6C382FAC7A3100FC1EF5 /* SwiftViewController.swift */; };
 		F58CC858E36C6E7CC47EE3B9 /* Pods_DeviceImpressTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBB19F5F06EA679D0E15845 /* Pods_DeviceImpressTool_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		7CEA3BA4D5B3D9A89AD82E9A /* DeviceImpressTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DeviceImpressTool.podspec; path = ../DeviceImpressTool.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A7B6C352FAC772900FC1EF5 /* big.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big.JPEG; sourceTree = "<group>"; };
+		9A7B6C372FAC7A3000FC1EF5 /* DeviceImpressTool_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceImpressTool_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A7B6C382FAC7A3100FC1EF5 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		AD0DD7455AF80672D0DE022A /* Pods-DeviceImpressTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceImpressTool_Example.release.xcconfig"; path = "Target Support Files/Pods-DeviceImpressTool_Example/Pods-DeviceImpressTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B6E92D63C7EBB43ED7017F69 /* Pods-DeviceImpressTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceImpressTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-DeviceImpressTool_Example/Pods-DeviceImpressTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBBB19F5F06EA679D0E15845 /* Pods_DeviceImpressTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceImpressTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,10 +153,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* FYViewController.h */,
 				6003F5A6195388D20070C39A /* FYViewController.m */,
+				9A7B6C382FAC7A3100FC1EF5 /* SwiftViewController.swift */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				9A7B6C352FAC772900FC1EF5 /* big.JPEG */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				9A7B6C372FAC7A3000FC1EF5 /* DeviceImpressTool_Example-Bridging-Header.h */,
 			);
 			name = "Example for DeviceImpressTool";
 			path = DeviceImpressTool;
@@ -250,6 +255,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = crazyLuobo;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						LastSwiftMigration = 1640;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -368,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7B6C392FAC7A3100FC1EF5 /* SwiftViewController.swift in Sources */,
 				6003F59E195388D20070C39A /* FYAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -498,12 +507,15 @@
 			baseConfigurationReference = B6E92D63C7EBB43ED7017F69 /* Pods-DeviceImpressTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceImpressTool/DeviceImpressTool-Prefix.pch";
 				INFOPLIST_FILE = "DeviceImpressTool/DeviceImpressTool-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeviceImpressTool/DeviceImpressTool_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,12 +526,14 @@
 			baseConfigurationReference = AD0DD7455AF80672D0DE022A /* Pods-DeviceImpressTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceImpressTool/DeviceImpressTool-Prefix.pch";
 				INFOPLIST_FILE = "DeviceImpressTool/DeviceImpressTool-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeviceImpressTool/DeviceImpressTool_Example-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
