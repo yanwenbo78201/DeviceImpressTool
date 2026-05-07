@@ -8,6 +8,7 @@
 
 #import "FYViewController.h"
 #import <DeviceImpressTool/SystemService.h>
+#import <DeviceImpressTool/ImpressService.h>
 
 @interface FYViewController ()
 
@@ -20,6 +21,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"%@",[[SystemService new] deviceInfo]);
+    [ImpressService compressImageForUploadKilobyteRange200To600:[UIImage imageNamed:@"big.JPEG"] completion:^(ImpressServiceOutput * _Nullable output, NSError * _Nullable error) {
+        if (output) {
+            // 压缩成功
+            NSData *data = output.data;
+            NSLog(@"压缩成功--%@",data);
+        } else {
+            // 压缩失败
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

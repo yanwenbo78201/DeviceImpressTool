@@ -73,16 +73,16 @@ DeviceImpressTool 是一个 iOS 设备信息采集与图片压缩工具集，采
 [BrokenService phoneBrokenStatus];
 ```
 
-### ObjcImgPressAnTool - 图片压缩
+### ImpressService - 图片压缩
 专为 200-600 KB 上传场景设计的图片压缩工具：
 ```objectivec
 // 同步压缩
-ObjcImgPressAnOutput *output = [ObjcImgPressAnTool compressImageForUploadKilobyteRange200To600:image error:nil];
+ImpressServiceOutput *output = [ImpressService compressImageForUploadKilobyteRange200To600:image error:nil];
 NSData *compressedData = output.data;
 NSString *base64String = output.base64;
 
 // 异步压缩（后台执行，主线程回调）
-[ObjcImgPressAnTool compressImageForUploadKilobyteRange200To600:image completion:^(ObjcImgPressAnOutput * _Nullable output, NSError * _Nullable error) {
+[ImpressService compressImageForUploadKilobyteRange200To600:image completion:^(ImpressServiceOutput * _Nullable output, NSError * _Nullable error) {
     if (output) {
         // 压缩成功
         NSData *data = output.data;
@@ -146,6 +146,9 @@ import DeviceImpressTool
 let version = DeviceService.deviceSystemVersion()
 let isJailbroken = BrokenService.phoneBrokenStatus()
 let networkType = NetworkService.deviceNetworkType()
+
+// 图片压缩示例
+let output = ImpressService.compressImageForUploadKilobyteRange200To600(image)
 ```
 
 ## 子模块依赖关系

@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		175E5E414C2A1768CF78E19E993A8FB3 /* TimeService.m in Sources */ = {isa = PBXBuildFile; fileRef = C343B2928956FF8429781CF321363B26 /* TimeService.m */; };
+		113B663008EB5188A5CABF25CB70A4E9 /* ImpressService.h in Headers */ = {isa = PBXBuildFile; fileRef = A46CFBAF672FFF088834EA30D08C73BD /* ImpressService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		146DF1163D72E38D89401E708A40AC16 /* TimeService.m in Sources */ = {isa = PBXBuildFile; fileRef = C343B2928956FF8429781CF321363B26 /* TimeService.m */; };
 		17AF2A8CA95B125FCFCB31A1B95CCD2A /* Pods-DeviceImpressTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F205A149155759C22D2A17156FDF4CA5 /* Pods-DeviceImpressTool_Tests-dummy.m */; };
+		1A43CC62CE14C0162BF89BC07BCFC4FA /* ImpressService.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFD482C0F3E4FC6B0BEDBD26BA02D30 /* ImpressService.m */; };
 		20072096673B425DDA1A523BEC17EB39 /* Pods-DeviceImpressTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9665037401EAEC4C452254CD962DF7 /* Pods-DeviceImpressTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		208AD08555F7BFF8D551992C38C6C944 /* ObjcImgPressAnTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8BA0AA249B41CE845640442C1E0B07 /* ObjcImgPressAnTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D72A54D729EB8E3ED1414546E2FB1F5 /* StorageService.h in Headers */ = {isa = PBXBuildFile; fileRef = A52A0EFC73DD14D5828BA006540DDF03 /* StorageService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		305068F1053823EE8A652FBDF80AC6A0 /* DeviceImpressTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E516294C414C343E296B4CF6CFA7BE /* DeviceImpressTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29A333A0386E6301D2CE4A961945A3A0 /* DeviceImpressTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E516294C414C343E296B4CF6CFA7BE /* DeviceImpressTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33F0B8DBCEC45F80F1275372F7F8596B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1015C73E7D3F698DF37CCFC130D9996B /* Foundation.framework */; };
 		349BF032A54ACE1712C303E3263BC9BD /* Pods-DeviceImpressTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9F789AE322E7B1F3ECB7C7A052707D /* Pods-DeviceImpressTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		377B6BA5FDDDF3833683653AD959A437 /* DeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = E233405931E74545BFE160613F668A1F /* DeviceService.m */; };
 		3A4049734C5396C2FEED4A132C9DDE33 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC30CD877673F1FA9D9AC9DAFCEF0A9 /* AdSupport.framework */; };
-		4518E448B2AE921E00B79A24336322A0 /* BrokenService.m in Sources */ = {isa = PBXBuildFile; fileRef = A60967F002BF64891634A098A31C521E /* BrokenService.m */; };
 		4AAA2619088AB976DC61D996258BAA10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA47DF6F369BAF7200FEB486375B3BF1 /* UIKit.framework */; };
-		5CA17D3D4360D54E2FC0B765C85A20F7 /* DeviceImpressTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73D5CE60870B244893FBF150C80F08 /* DeviceImpressTool-dummy.m */; };
-		6698056060CC79C5FC56B09FBABF5980 /* SystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = B31C98EE2410A48E170775CE18AE19D7 /* SystemService.m */; };
+		59B43AF4AD77C9DEB15D975A5546B00A /* NetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = D7014BF1D7F501E29BC0BC4A93BF7E3E /* NetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69A3FF199F27C070E3DE13D534F4907C /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A77A1CB9D4A997E1AB9C49FD161B7DE9 /* NetworkService.m */; };
 		6F84A7E9F6F05D1983A866390EC5C7EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02D513332A9DA9FF9A2CB91D00C3E4A /* AppTrackingTransparency.framework */; };
+		80F57486D6D380DF190BE869D5FB2152 /* BrokenService.m in Sources */ = {isa = PBXBuildFile; fileRef = A60967F002BF64891634A098A31C521E /* BrokenService.m */; };
+		8342D18DFC6432F300C1DA767D87C0C5 /* SystemService.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6973254ED2D717A73BA8D08E6E2AFF /* SystemService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		849BF11503F2639F81229771ACC39375 /* Pods-DeviceImpressTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD833BD766F6D99200A05496C6861A06 /* Pods-DeviceImpressTool_Example-dummy.m */; };
-		86CD1BBB237C398CC7C78E799FDA13DA /* NetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = D7014BF1D7F501E29BC0BC4A93BF7E3E /* NetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89D6DB407FA415FD2CACB80407A23231 /* SystemService.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6973254ED2D717A73BA8D08E6E2AFF /* SystemService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E4A15811A68D5FD1CF6027B7E12F02C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1015C73E7D3F698DF37CCFC130D9996B /* Foundation.framework */; };
-		973D3A33528961E13DB86C3808BF7064 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = A77A1CB9D4A997E1AB9C49FD161B7DE9 /* NetworkService.m */; };
-		97C31B6F9BB2615FA998516BA369106D /* BrokenService.h in Headers */ = {isa = PBXBuildFile; fileRef = D32E0F62A4F96A93D547D8E0A9C919A9 /* BrokenService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADE2C9E4AE9251DE13B9C2D8CC4DCF05 /* DeviceService.h in Headers */ = {isa = PBXBuildFile; fileRef = EE9E26E2052716233DBE9241389DFAA2 /* DeviceService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B46207270F518151606580B3612D3B18 /* TimeService.h in Headers */ = {isa = PBXBuildFile; fileRef = C323F859552BDBFA450D13CBDDA28FD6 /* TimeService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9824E557FC0E7B338308B5676FE89D3B /* StorageService.h in Headers */ = {isa = PBXBuildFile; fileRef = A52A0EFC73DD14D5828BA006540DDF03 /* StorageService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF3CF88DA081B0B018819CAC994E293 /* SystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = B31C98EE2410A48E170775CE18AE19D7 /* SystemService.m */; };
+		A8C656671945C022CE541E6A495A3CA2 /* TimeService.h in Headers */ = {isa = PBXBuildFile; fileRef = C323F859552BDBFA450D13CBDDA28FD6 /* TimeService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD8CD1782A93513D140046EFFEA61F33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1015C73E7D3F698DF37CCFC130D9996B /* Foundation.framework */; };
+		C7406AEBF38729D4F84EC0634E3D66B7 /* BrokenService.h in Headers */ = {isa = PBXBuildFile; fileRef = D32E0F62A4F96A93D547D8E0A9C919A9 /* BrokenService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7C7D858AD54C2BC546E401AC2D8EC0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8407943E14D2E44F833C63591E57C51 /* SystemConfiguration.framework */; };
+		D8C85E65862FCF1AC878507EC802866E /* DeviceImpressTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA73D5CE60870B244893FBF150C80F08 /* DeviceImpressTool-dummy.m */; };
+		E89E75EA4204638E4D78434061FDB2D5 /* DeviceService.m in Sources */ = {isa = PBXBuildFile; fileRef = E233405931E74545BFE160613F668A1F /* DeviceService.m */; };
 		F06EAAFDF332EA8477A17891DE69710F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0A352519CC757CDCAF4195B3E8876E /* CoreTelephony.framework */; };
-		F0C09DE7DF419C0FB910BE3C74AA8686 /* StorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = D17BEA145D3471E6BD17289192F262AB /* StorageService.m */; };
-		F45A76D05B6B53872BC101A3545A1927 /* ObjcImgPressAnTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3BCA74D65F18F2AC9530EA4F7EA61 /* ObjcImgPressAnTool.m */; };
+		F40F5A91B194C9527D47C216ED56E325 /* StorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = D17BEA145D3471E6BD17289192F262AB /* StorageService.m */; };
+		F5584991B7FA84177FB5A6725CC6946F /* DeviceService.h in Headers */ = {isa = PBXBuildFile; fileRef = EE9E26E2052716233DBE9241389DFAA2 /* DeviceService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,8 +74,8 @@
 		7F6973254ED2D717A73BA8D08E6E2AFF /* SystemService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SystemService.h; path = DeviceImpressTool/Classes/SystemService.h; sourceTree = "<group>"; };
 		875F981AB13BAF122246BEF762B2ECF6 /* Pods-DeviceImpressTool_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeviceImpressTool_Example"; path = Pods_DeviceImpressTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0A352519CC757CDCAF4195B3E8876E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		9BB3BCA74D65F18F2AC9530EA4F7EA61 /* ObjcImgPressAnTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjcImgPressAnTool.m; path = DeviceImpressTool/Classes/Impress/ObjcImgPressAnTool.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A46CFBAF672FFF088834EA30D08C73BD /* ImpressService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImpressService.h; path = DeviceImpressTool/Classes/Impress/ImpressService.h; sourceTree = "<group>"; };
 		A52A0EFC73DD14D5828BA006540DDF03 /* StorageService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StorageService.h; path = DeviceImpressTool/Classes/Storage/StorageService.h; sourceTree = "<group>"; };
 		A60967F002BF64891634A098A31C521E /* BrokenService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BrokenService.m; path = DeviceImpressTool/Classes/Broken/BrokenService.m; sourceTree = "<group>"; };
 		A77A1CB9D4A997E1AB9C49FD161B7DE9 /* NetworkService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NetworkService.m; path = DeviceImpressTool/Classes/Network/NetworkService.m; sourceTree = "<group>"; };
@@ -92,7 +92,6 @@
 		D9A2D84EDC061ABB07AC5701A021B65C /* Pods-DeviceImpressTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeviceImpressTool_Example-Info.plist"; sourceTree = "<group>"; };
 		DB48E7F0E828DEDF9D172314126A5713 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		DB5B48712A0E540B554FE71AEA8125F8 /* DeviceImpressTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceImpressTool.release.xcconfig; sourceTree = "<group>"; };
-		DB8BA0AA249B41CE845640442C1E0B07 /* ObjcImgPressAnTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjcImgPressAnTool.h; path = DeviceImpressTool/Classes/Impress/ObjcImgPressAnTool.h; sourceTree = "<group>"; };
 		DEF62ECC1B69A969653F562612F4AE8C /* Pods-DeviceImpressTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeviceImpressTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E233405931E74545BFE160613F668A1F /* DeviceService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DeviceService.m; path = DeviceImpressTool/Classes/Device/DeviceService.m; sourceTree = "<group>"; };
 		E42E1ABB2FABBF5B9DB2032523406ABA /* DeviceImpressTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceImpressTool-prefix.pch"; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		F09B40866B549623F8F00CC514227EBF /* Pods-DeviceImpressTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeviceImpressTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F205A149155759C22D2A17156FDF4CA5 /* Pods-DeviceImpressTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeviceImpressTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		FA73D5CE60870B244893FBF150C80F08 /* DeviceImpressTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceImpressTool-dummy.m"; sourceTree = "<group>"; };
+		FCFD482C0F3E4FC6B0BEDBD26BA02D30 /* ImpressService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ImpressService.m; path = DeviceImpressTool/Classes/Impress/ImpressService.m; sourceTree = "<group>"; };
 		FD833BD766F6D99200A05496C6861A06 /* Pods-DeviceImpressTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeviceImpressTool_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,21 +141,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1545E9AE96D38A2BE2E906FE60672469 /* Impress */ = {
-			isa = PBXGroup;
-			children = (
-				DB8BA0AA249B41CE845640442C1E0B07 /* ObjcImgPressAnTool.h */,
-				9BB3BCA74D65F18F2AC9530EA4F7EA61 /* ObjcImgPressAnTool.m */,
-			);
-			name = Impress;
-			sourceTree = "<group>";
-		};
 		2334E75FD2B3510B9E6ACA542A230BDA /* DeviceImpressTool */ = {
 			isa = PBXGroup;
 			children = (
 				3E4CBDF900B7A5FA4BCB56F17D025E7F /* Broken */,
 				7A9E92D0980B60277EB80CA4DAB8BB82 /* Device */,
-				1545E9AE96D38A2BE2E906FE60672469 /* Impress */,
+				C182C7E8BDA7170486B823E589445187 /* Impress */,
 				6510A790C8CCDF025F93191570DF9866 /* Network */,
 				DAB79530D1D21F0496A6EAB7CD21ED6D /* Pod */,
 				A27E594776B5827B13CC1097FCCC770B /* Storage */,
@@ -291,6 +282,15 @@
 			path = "Example/Pods/Target Support Files/DeviceImpressTool";
 			sourceTree = "<group>";
 		};
+		C182C7E8BDA7170486B823E589445187 /* Impress */ = {
+			isa = PBXGroup;
+			children = (
+				A46CFBAF672FFF088834EA30D08C73BD /* ImpressService.h */,
+				FCFD482C0F3E4FC6B0BEDBD26BA02D30 /* ImpressService.m */,
+			);
+			name = Impress;
+			sourceTree = "<group>";
+		};
 		C6E21D1545FADD30E5175E0A3720A31C /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,18 +357,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1F5857F08FF4E821DCD1FB451ACABCD /* Headers */ = {
+		D4EB48AE79AE1EDC03C511F6CC7ACDC8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C31B6F9BB2615FA998516BA369106D /* BrokenService.h in Headers */,
-				305068F1053823EE8A652FBDF80AC6A0 /* DeviceImpressTool-umbrella.h in Headers */,
-				ADE2C9E4AE9251DE13B9C2D8CC4DCF05 /* DeviceService.h in Headers */,
-				86CD1BBB237C398CC7C78E799FDA13DA /* NetworkService.h in Headers */,
-				208AD08555F7BFF8D551992C38C6C944 /* ObjcImgPressAnTool.h in Headers */,
-				2D72A54D729EB8E3ED1414546E2FB1F5 /* StorageService.h in Headers */,
-				89D6DB407FA415FD2CACB80407A23231 /* SystemService.h in Headers */,
-				B46207270F518151606580B3612D3B18 /* TimeService.h in Headers */,
+				C7406AEBF38729D4F84EC0634E3D66B7 /* BrokenService.h in Headers */,
+				29A333A0386E6301D2CE4A961945A3A0 /* DeviceImpressTool-umbrella.h in Headers */,
+				F5584991B7FA84177FB5A6725CC6946F /* DeviceService.h in Headers */,
+				113B663008EB5188A5CABF25CB70A4E9 /* ImpressService.h in Headers */,
+				59B43AF4AD77C9DEB15D975A5546B00A /* NetworkService.h in Headers */,
+				9824E557FC0E7B338308B5676FE89D3B /* StorageService.h in Headers */,
+				8342D18DFC6432F300C1DA767D87C0C5 /* SystemService.h in Headers */,
+				A8C656671945C022CE541E6A495A3CA2 /* TimeService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,8 +398,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 137AD2E3CF83EDC52D9D5E7796ED158B /* Build configuration list for PBXNativeTarget "DeviceImpressTool" */;
 			buildPhases = (
-				E1F5857F08FF4E821DCD1FB451ACABCD /* Headers */,
-				292FF27F0179AD710621EFE2D39A6283 /* Sources */,
+				D4EB48AE79AE1EDC03C511F6CC7ACDC8 /* Headers */,
+				2555AAF361F5445E1122C1228C7D71E0 /* Sources */,
 				145935206DB64B93B6EF11ADC308231B /* Frameworks */,
 				C5EC13515DCB12221C8F904EEE9547AE /* Resources */,
 			);
@@ -487,18 +487,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		292FF27F0179AD710621EFE2D39A6283 /* Sources */ = {
+		2555AAF361F5445E1122C1228C7D71E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4518E448B2AE921E00B79A24336322A0 /* BrokenService.m in Sources */,
-				5CA17D3D4360D54E2FC0B765C85A20F7 /* DeviceImpressTool-dummy.m in Sources */,
-				377B6BA5FDDDF3833683653AD959A437 /* DeviceService.m in Sources */,
-				973D3A33528961E13DB86C3808BF7064 /* NetworkService.m in Sources */,
-				F45A76D05B6B53872BC101A3545A1927 /* ObjcImgPressAnTool.m in Sources */,
-				F0C09DE7DF419C0FB910BE3C74AA8686 /* StorageService.m in Sources */,
-				6698056060CC79C5FC56B09FBABF5980 /* SystemService.m in Sources */,
-				175E5E414C2A1768CF78E19E993A8FB3 /* TimeService.m in Sources */,
+				80F57486D6D380DF190BE869D5FB2152 /* BrokenService.m in Sources */,
+				D8C85E65862FCF1AC878507EC802866E /* DeviceImpressTool-dummy.m in Sources */,
+				E89E75EA4204638E4D78434061FDB2D5 /* DeviceService.m in Sources */,
+				1A43CC62CE14C0162BF89BC07BCFC4FA /* ImpressService.m in Sources */,
+				69A3FF199F27C070E3DE13D534F4907C /* NetworkService.m in Sources */,
+				F40F5A91B194C9527D47C216ED56E325 /* StorageService.m in Sources */,
+				9CF3CF88DA081B0B018819CAC994E293 /* SystemService.m in Sources */,
+				146DF1163D72E38D89401E708A40AC16 /* TimeService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
