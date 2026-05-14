@@ -23,7 +23,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceImpressTool: 373b6e1dae6b15811837b9ca4986867c9393ae01
+  DeviceImpressTool: 8ffb10228c1e98b85c311a95c8df1970ec4c3ab8
 
 PODFILE CHECKSUM: ecbe80bcb1a4596763fe0cf8b33151a6ec726400
 
