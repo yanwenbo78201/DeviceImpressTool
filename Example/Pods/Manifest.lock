@@ -14,9 +14,15 @@ PODS:
     - DeviceImpressTool/Storage
     - DeviceImpressTool/Time
   - DeviceImpressTool/Time (0.1.0)
+  - FYLocationObjc (0.1.1)
 
 DEPENDENCIES:
   - DeviceImpressTool (from `../`)
+  - FYLocationObjc
+
+SPEC REPOS:
+  trunk:
+    - FYLocationObjc
 
 EXTERNAL SOURCES:
   DeviceImpressTool:
@@ -24,7 +30,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DeviceImpressTool: 8ffb10228c1e98b85c311a95c8df1970ec4c3ab8
+  FYLocationObjc: d3279f1e5e029fc30919f8798a3c3b4d0c00aba0
 
-PODFILE CHECKSUM: ecbe80bcb1a4596763fe0cf8b33151a6ec726400
+PODFILE CHECKSUM: 5c22c2f720a5d05c86767013748def75c486096f
 
 COCOAPODS: 1.16.2

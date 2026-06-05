@@ -1,8 +1,9 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '15.0'
 
 target 'DeviceImpressTool_Example' do
+  pod 'FYLocationObjc'
   pod 'DeviceImpressTool', :path => '../'
 
   target 'DeviceImpressTool_Tests' do

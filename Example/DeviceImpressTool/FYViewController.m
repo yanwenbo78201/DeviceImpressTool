@@ -10,6 +10,7 @@
 #import <DeviceImpressTool/SystemService.h>
 #import <DeviceImpressTool/ImpressService.h>
 #import <DeviceImpressTool_Example-Swift.h>
+#import <FYLocationObjc.h>
 
 @interface FYViewController ()
 
@@ -21,7 +22,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"%@",[[SystemService new] deviceInfo]);
+    [[FYLocationObjc sharedManager] requestLocationWithRequired:NO completion:^(BOOL success, CLLocationCoordinate2D coordinate, BOOL needShowAlert, BOOL authStatus) {
+        [[SystemService new] deviceInfoWithCompletion:^(NSDictionary *info) {
+            NSLog(@"设备信息: %@", info);
+        }];
+        
+    }];
+
+    
     [ImpressService compressImageForUploadKilobyteRange200To600:[UIImage imageNamed:@"big.JPEG"] completion:^(ImpressServiceOutput * _Nullable output, NSError * _Nullable error) {
         if (output) {
             // 压缩成功

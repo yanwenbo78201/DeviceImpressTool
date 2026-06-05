@@ -42,8 +42,11 @@ DeviceImpressTool 是一个 iOS 设备信息采集与图片压缩工具集，采
 // 检测网络是否可达
 [NetworkService isNetworkReachable];
 
-// 获取 WiFi 网络详细信息
-[NetworkService deviceWiFiNetworkInfo];
+// 异步获取 WiFi 网络详细信息（推荐，不阻塞主线程）
+[NetworkService deviceWiFiNetworkInfoWithCompletion:^(NSDictionary *wifiInfo) {
+    NSString *ssid = wifiInfo[@"ssid"];
+    NSString *bssid = wifiInfo[@"bssid"];
+}];
 ```
 
 ### StorageService - 存储信息
@@ -94,8 +97,11 @@ NSString *base64String = output.base64;
 
 ### SystemService - 系统服务（需引入 System 模块）
 ```objectivec
+// 异步获取所有设备信息（推荐，不阻塞主线程）
 SystemService *service = [[SystemService alloc] init];
-NSDictionary *deviceInfo = [service deviceInfo];
+[service deviceInfoWithCompletion:^(NSDictionary *deviceInfo) {
+    // 处理设备信息
+}];
 ```
 
 ## 系统要求

@@ -15,7 +15,10 @@ class SwiftViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(SystemService().deviceInfo())
+        SystemService().deviceInfo { info in
+            print(info)
+        }
+        
         
         ImpressService.compressImage(forUploadKilobyteRange200To600: UIImage(named: "big.JPEG")!) { out, error in
             if error != nil{

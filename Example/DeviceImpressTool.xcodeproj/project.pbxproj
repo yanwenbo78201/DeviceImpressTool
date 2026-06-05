@@ -67,6 +67,7 @@
 		9A7B6C352FAC772900FC1EF5 /* big.JPEG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big.JPEG; sourceTree = "<group>"; };
 		9A7B6C372FAC7A3000FC1EF5 /* DeviceImpressTool_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceImpressTool_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		9A7B6C382FAC7A3100FC1EF5 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		9AF684092FD2767500A01DD8 /* DeviceImpressTool_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceImpressTool_Example.entitlements; sourceTree = "<group>"; };
 		AD0DD7455AF80672D0DE022A /* Pods-DeviceImpressTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceImpressTool_Example.release.xcconfig"; path = "Target Support Files/Pods-DeviceImpressTool_Example/Pods-DeviceImpressTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B6E92D63C7EBB43ED7017F69 /* Pods-DeviceImpressTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviceImpressTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-DeviceImpressTool_Example/Pods-DeviceImpressTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BBBB19F5F06EA679D0E15845 /* Pods_DeviceImpressTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeviceImpressTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +115,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				9AF684092FD2767500A01DD8 /* DeviceImpressTool_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for DeviceImpressTool */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -337,10 +339,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DeviceImpressTool_Example/Pods-DeviceImpressTool_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DeviceImpressTool/DeviceImpressTool.framework",
+				"${BUILT_PRODUCTS_DIR}/FYLocationObjc/FYLocationObjc.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceImpressTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FYLocationObjc.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -508,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DeviceImpressTool_Example.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceImpressTool/DeviceImpressTool-Prefix.pch";
 				INFOPLIST_FILE = "DeviceImpressTool/DeviceImpressTool-Info.plist";
@@ -527,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DeviceImpressTool_Example.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceImpressTool/DeviceImpressTool-Prefix.pch";
 				INFOPLIST_FILE = "DeviceImpressTool/DeviceImpressTool-Info.plist";

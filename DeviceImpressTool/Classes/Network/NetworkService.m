@@ -10,23 +10,32 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #import <SystemConfiguration/SCNetworkReachability.h>
+#import <NetworkExtension/NetworkExtension.h>
 
 @implementation NetworkService
 
 #pragma mark - Public Methods
 
-+ (NSDictionary *)getDeviceCommunicationInfo{
-    NSMutableDictionary *communicationInfo = [NSMutableDictionary dictionary];
-    communicationInfo[@"network"] = [NetworkService getDeviceNetworkType];
-    NSDictionary *wifiData = [NetworkService getDeviceWiFiNetworkInfo];
-    NSString *wifiSSID = [wifiData.allKeys containsObject:@"ssid"] ? wifiData[@"ssid"] : @"null";
-    NSString *wifiBSSID = [wifiData.allKeys containsObject:@"bssid"] ? wifiData[@"bssid"] : @"null";
-    [communicationInfo setValue:wifiSSID forKey:@"wifiName"];
-    [communicationInfo setValue:wifiBSSID forKey:@"wifiBssid"];
-    
-    communicationInfo[@"isvpn"] = [NetworkService getDeviceVPNConnectionStatus];
-    communicationInfo[@"proxied"] = [NetworkService getDeviceNetworkProxyStatus];
-    return communicationInfo;
++ (void)getDeviceCommunicationInfoWithCompletion:(void(^)(NSDictionary *info))completion {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSMutableDictionary *communicationInfo = [NSMutableDictionary dictionary];
+        communicationInfo[@"network"] = [NetworkService getDeviceNetworkType];
+        communicationInfo[@"isvpn"] = [NetworkService getDeviceVPNConnectionStatus];
+        communicationInfo[@"proxied"] = [NetworkService getDeviceNetworkProxyStatus];
+        
+        [NetworkService getDeviceWiFiNetworkInfoWithCompletion:^(NSDictionary * _Nullable wifiInfo) {
+            NSString *wifiSSID = [wifiInfo.allKeys containsObject:@"ssid"] ? wifiInfo[@"ssid"] : @"null";
+            NSString *wifiBSSID = [wifiInfo.allKeys containsObject:@"bssid"] ? wifiInfo[@"bssid"] : @"null";
+            [communicationInfo setValue:wifiSSID forKey:@"wifiName"];
+            [communicationInfo setValue:wifiBSSID forKey:@"wifiBssid"];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (completion) {
+                    completion([communicationInfo copy]);
+                }
+            });
+        }];
+    });
 }
 
 + (NSString *)getDeviceNetworkProxyStatus {
@@ -91,15 +100,36 @@
     return [self classifyMobileNetworkType:radioAccessTechnology];
 }
 
-+ (NSDictionary *)getDeviceWiFiNetworkInfo {
-    NSArray *supportedInterfaces = [self getSupportedNetworkInterfaces];
-    NSDictionary *currentNetworkInfo = [self getCurrentNetworkInfo:supportedInterfaces];
-    
-    if (currentNetworkInfo) {
-        return [self extractWiFiInfoFromNetworkInfo:currentNetworkInfo];
-    }
-    
-    return nil;
++ (void)getDeviceWiFiNetworkInfoWithCompletion:(NetworkServiceWiFiCompletion)completion {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        if (@available(iOS 14.0, *)) {
+            [NEHotspotNetwork fetchCurrentWithCompletionHandler:^(NEHotspotNetwork * _Nullable currentNetwork) {
+                NSDictionary *wifiInfo = @{
+                    @"ssid": currentNetwork.SSID ?: @"null",
+                    @"bssid": currentNetwork.BSSID ?: @"null"
+                };
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (completion) {
+                        completion(wifiInfo);
+                    }
+                });
+            }];
+        } else {
+            NSArray *supportedInterfaces = [self getSupportedNetworkInterfaces];
+            NSDictionary *currentNetworkInfo = [self getCurrentNetworkInfo:supportedInterfaces];
+            NSDictionary *wifiInfo = nil;
+            
+            if (currentNetworkInfo) {
+                wifiInfo = [self extractWiFiInfoFromNetworkInfo:currentNetworkInfo];
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (completion) {
+                    completion(wifiInfo);
+                }
+            });
+        }
+    });
 }
 
 + (BOOL)isDeviceNetworkReachable {
