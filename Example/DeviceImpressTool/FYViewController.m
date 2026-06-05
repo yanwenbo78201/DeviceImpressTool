@@ -18,13 +18,17 @@
 
 @implementation FYViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [[FYLocationObjc sharedManager] requestLocationWithRequired:NO completion:^(BOOL success, CLLocationCoordinate2D coordinate, BOOL needShowAlert, BOOL authStatus) {
-        [[SystemService new] deviceInfoWithCompletion:^(NSDictionary *info) {
-            NSLog(@"设备信息: %@", info);
+//        [[SystemService new] deviceInfoWithCompletion:^(NSDictionary *info) {
+//            NSLog(@"设备信息: %@", info);
+//        }];
+        [[SystemService new] deviceInfoWithUuid:@"sdfsdkfksdksdjk" WithCompletion:^(NSDictionary * _Nonnull info) {
+            NSLog(@"%@",info);
         }];
         
     }];
