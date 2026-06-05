@@ -97,9 +97,21 @@ NSString *base64String = output.base64;
 
 ### SystemService - 系统服务（需引入 System 模块）
 ```objectivec
-// 异步获取所有设备信息（推荐，不阻塞主线程）
 SystemService *service = [[SystemService alloc] init];
+
+// 同步获取设备信息（不含 WiFi，不阻塞主线程）
+NSDictionary *deviceInfo = [service deviceInfoWithOutWifi];
+
+// 同步获取设备信息（不含 WiFi，带 UUID）
+NSDictionary *deviceInfo = [service deviceInfoWithOutWifiWithUuid:@"your-uuid"];
+
+// 异步获取设备信息（包含 WiFi，推荐方式）
 [service deviceInfoWithCompletion:^(NSDictionary *deviceInfo) {
+    // 处理设备信息
+}];
+
+// 异步获取设备信息（包含 WiFi，带 UUID）
+[service deviceInfoWithUuid:@"your-uuid" WithCompletion:^(NSDictionary *deviceInfo) {
     // 处理设备信息
 }];
 ```
@@ -148,10 +160,29 @@ pod 'DeviceImpressTool/Impress'
 ```swift
 import DeviceImpressTool
 
-// 使用示例
+// 设备信息
 let version = DeviceService.deviceSystemVersion()
 let isJailbroken = BrokenService.phoneBrokenStatus()
 let networkType = NetworkService.deviceNetworkType()
+
+// SystemService 使用
+let service = SystemService()
+
+// 同步获取（不含 WiFi）
+let info1 = service.deviceInfoWithoutWifi()
+
+// 同步获取（不含 WiFi，带 UUID）
+let info2 = service.deviceInfoWithoutWifi(uuid: "your-uuid")
+
+// 异步获取（包含 WiFi）
+service.deviceInfo { info in
+    // 处理设备信息
+}
+
+// 异步获取（包含 WiFi，带 UUID）
+service.deviceInfo(uuid: "your-uuid") { info in
+    // 处理设备信息
+}
 
 // 图片压缩示例
 let output = ImpressService.compressImageForUploadKilobyteRange200To600(image)

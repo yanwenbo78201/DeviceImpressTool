@@ -1,16 +1,19 @@
 //
 //  SystemService.h
-//  FYDeviceObjc_Example
+//  DeviceImpressTool
 //
 //  Created by Computer  on 07/01/26.
 //  Copyright © 2026 Computer. All rights reserved.
 //
+
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SystemService : NSObject
+- (NSDictionary *)deviceInfoWithOutWifi NS_SWIFT_NAME(deviceInfoWithoutWifi());
+- (NSDictionary *)deviceInfoWithOutWifiWithUuid:(NSString *)uuid NS_SWIFT_NAME(deviceInfoWithoutWifi(uuid:));
 - (void)deviceInfoWithCompletion:(void(^)(NSDictionary *info))completion NS_SWIFT_NAME(deviceInfo(completion:));
 - (void)deviceInfoWithUuid:(NSString *)uuid WithCompletion:(void(^)(NSDictionary *info))completion NS_SWIFT_NAME(deviceInfo(uuid:completion:));
 @end
